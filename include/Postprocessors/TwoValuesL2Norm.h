@@ -5,7 +5,7 @@
 class TwoValuesL2Norm : public ElementIntegralVariablePostprocessor
 {
 public:
-    static InputParameters validParams(); 
+  static InputParameters validParams(); 
   TwoValuesL2Norm(const InputParameters & parameters);
 
   virtual Real getValue() const override; // Function overridden in the src file
