@@ -1,6 +1,6 @@
 #pragma once
 
-#include "ElementIntegralVariablePostprocessor.h"
+#include "ElementIntegralVariablePostprocessor.h" // Base class of our object
 
 class TwoValuesL2Norm : public ElementIntegralVariablePostprocessor
 {
