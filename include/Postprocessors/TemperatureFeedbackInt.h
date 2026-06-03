@@ -3,7 +3,6 @@
 #include "ElementIntegralVariablePostprocessor.h"
 
 class TemperatureFeedbackInt : public ElementIntegralVariablePostprocessor
-
 {
 public:
   static InputParameters validParams();
