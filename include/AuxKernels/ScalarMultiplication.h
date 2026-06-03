@@ -1,7 +1,6 @@
 #pragma once
 
-// The base class of our object: an AuxKernel object
-#include "AuxKernel.h"
+#include "AuxKernel.h" // The base class of our object
 
 class ScalarMultiplication : public AuxKernel
 {
