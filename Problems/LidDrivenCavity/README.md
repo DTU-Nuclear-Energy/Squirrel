@@ -5,9 +5,7 @@ Instructions
 
 # Nuclear data
 
-The neutronic parameters (neutron flux, mean neutron generation time, delayed fractions and decay constants for the DNP groups) are provided in the files kinetic_data.txt and Powershape.csv 
-
-They are identical to those used in [3]
+The neutronic parameters (neutron flux, mean neutron generation time, delayed fractions and decay constants for the DNP groups) are provided in the files *kinetic_data.txt* and *Powershape.csv*. They are identical to those used in [3].
 
 # Step 1.1 
 
