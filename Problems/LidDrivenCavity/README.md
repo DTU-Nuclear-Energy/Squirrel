@@ -14,6 +14,8 @@ The neutronic parameters (neutron flux, mean neutron generation time, delayed fr
 
 # References
 
+[1] P. Pfahl, A. Chambon, J. Groth-Jensen, and B. Lauritzen. 2026. “Squirrel: A MOOSE-Based App for Solving Point Kinetics in Molten Salt Reactors.” Nuclear Science and Engineering 200 (sup1): S39–51. doi:10.1080/00295639.2025.2494182.
+
 [2] Marco Tiberga, Rodrigo Gonzalez Gonzaga de Oliveira, Eric Cervi, Juan Antonio Blanco, Stefano Lorenzi, Manuele Aufiero, Danny Lathouwers, Pablo Rubiolo,
 Results from a multi-physics numerical benchmark for codes dedicated to molten salt fast reactors,
 Annals of Nuclear Energy,
