@@ -15,6 +15,6 @@ protected:
 
   /// The variable to compare to
   const VariableValue & _other_var;
-  const PostprocessorValue & _norm;
+  const PostprocessorValue & _norm; // Normalisation factor computed by another postprocessor
   Real _lambda; // Decay constant value
 };
