@@ -1,4 +1,4 @@
-#pragma once
+#pragma once // Ensures a header file is included only once during compilation
 
 #include "AuxKernel.h" // The base class of our object
 
