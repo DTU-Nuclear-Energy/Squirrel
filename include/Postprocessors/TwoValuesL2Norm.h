@@ -7,8 +7,8 @@ class TwoValuesL2Norm : public ElementIntegralVariablePostprocessor
 {
 public:
   // Required MOOSE methods
-  static InputParameters validParams();
-  TwoValuesL2Norm(const InputParameters & parameters);
+  static InputParameters validParams(); // Defines the input file syntax
+  TwoValuesL2Norm(const InputParameters & parameters); // Defines the constructor
 
   virtual Real getValue() const override; // Function overridden in the src file
 
