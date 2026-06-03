@@ -6,13 +6,12 @@ class WeightDNPPostprocessor : public ElementIntegralVariablePostprocessor
 {
 public:
   static InputParameters validParams();
-
   WeightDNPPostprocessor(const InputParameters & parameters);
 
-  virtual Real getValue() const override;
+  virtual Real getValue() const override; // Function overridden in the src file
 
 protected:
-  virtual Real computeQpIntegral() override;
+  virtual Real computeQpIntegral() override; // Function overridden in the src file
 
   /// The variable to compare to
   const VariableValue & _other_var;
