@@ -7,16 +7,15 @@ class TemperatureFeedbackInt : public ElementIntegralVariablePostprocessor
 {
 public:
   static InputParameters validParams();
-
   TemperatureFeedbackInt(const InputParameters & parameters);
 
   virtual Real getValue() const override;
 
 protected:
   virtual Real computeQpIntegral() override;
-  /// The variable to compare to
-  const VariableValue & _T_ref;
-  const VariableValue & _flux;
-  const PostprocessorValue & _Norm;
-  Real _total_rho;
+  
+  const VariableValue & _T_ref; // Reference temperature Quadrature-point values
+  const VariableValue & _flux; // Adjoint neutron flux shape Quadrature-point values
+  const PostprocessorValue & _Norm; // Normalisation factor computed by another postprocessor
+  Real _total_rho; // Total change in reactivity value
 };
