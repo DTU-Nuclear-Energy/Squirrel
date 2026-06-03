@@ -1,14 +1,12 @@
 #pragma once
 
-#include "ElementIntegralVariablePostprocessor.h" // The base class of our object
+#include "ElementIntegralVariablePostprocessor.h"
 
-// Declares TwoValuesL2Norm as a public subclass of ElementIntegralVariablePostprocessor
 class TwoValuesL2Norm : public ElementIntegralVariablePostprocessor
 {
 public:
-  // Required MOOSE methods
-  static InputParameters validParams(); // Defines the input file syntax
-  TwoValuesL2Norm(const InputParameters & parameters); // Defines the constructor
+    static InputParameters validParams(); 
+  TwoValuesL2Norm(const InputParameters & parameters);
 
   virtual Real getValue() const override; // Function overridden in the src file
 
