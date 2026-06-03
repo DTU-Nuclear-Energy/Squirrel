@@ -6,6 +6,7 @@
 class TwoValuesL2Norm : public ElementIntegralVariablePostprocessor
 {
 public:
+  // Required MOOSE methods
   static InputParameters validParams();
   TwoValuesL2Norm(const InputParameters & parameters);
 
