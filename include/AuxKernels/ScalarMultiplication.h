@@ -2,6 +2,7 @@
 
 #include "AuxKernel.h" // The base class of our object
 
+// Declares ScalarMultiplication as a public subclass of AuxKernel
 class ScalarMultiplication : public AuxKernel
 {
 public:
