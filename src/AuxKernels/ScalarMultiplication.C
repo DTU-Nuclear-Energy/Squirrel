@@ -29,6 +29,8 @@ ScalarMultiplication::validParams()
 ScalarMultiplication::ScalarMultiplication(const InputParameters & parameters)
   : AuxKernel(parameters),
     _src(coupledValue("source_variable")),
+    // getScalarVariable() retrieves the scalar variable by name — this is the special path
+    // needed for scalar (0D) variables, which aren't coupled the normal way   
     _var(_subproblem.getScalarVariable(_tid, getParam<VariableName>("factor"))),
     _normal_factor(getParam<Real>("normal_factor"))
 {
