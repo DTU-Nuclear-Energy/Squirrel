@@ -2,6 +2,7 @@
 
 #include "ElementIntegralVariablePostprocessor.h" // The base class of our object
 
+// Declares TwoValuesL2Norm as a public subclass of ElementIntegralVariablePostprocessor
 class TwoValuesL2Norm : public ElementIntegralVariablePostprocessor
 {
 public:
