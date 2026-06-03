@@ -1,9 +1,20 @@
+/**
+ * This is a MOOSE AuxKernel that computes a new auxiliary variable by multiplying a regular field 
+ * variable by a scalar variable (plus an optional normalization factor).
+*/
+
 #include "ScalarMultiplication.h"
 #include "MooseVariableScalar.h"
 #include "libmesh/dof_map.h"
 
 registerMooseObject("squirrelApp", ScalarMultiplication);
 
+// MOOSE Input file interface
+/**
+ * This defines what users write in the .i input file. source_variable is a standard coupled field 
+ * variable, while factor is explicitly a scalar variable (one value for the whole domain, 
+ * not per node/element).
+ */
 InputParameters
 ScalarMultiplication::validParams()
 {
