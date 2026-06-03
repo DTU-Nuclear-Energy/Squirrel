@@ -52,14 +52,6 @@ $$
 
 with $\Gamma$ being the reactivity change in reactivity caused by a global increase by $1$ Kelvin and $\int dr \psi(r) = 1$
 
-## Doppler and Density
-It is possible that the reactivity change depends on the temperature $\Gamma(T)$. 
-According to https://www.researchgate.net/publication/361864499 the Doppler effect follows a $\log(T)$ relation, while the Density feedback follows a linear relation.
-
-In addition, the importance function is different.  
-The Doppler follows $\psi^* \psi = \psi^2$ while the density feedback follows $\psi$
-
-
 # Implementation 
 
 ## AuxKernel 
@@ -75,11 +67,6 @@ $$
 A_I = \lambda_I \frac{\langle \psi|C_I\rangle}{\text{Norm}}
 $$
 for the $I$th group.
-### TemperatureFeedback
-postprocessor implements
-$$
-\rho = \sum_i \frac{\psi_i}{\Delta T} \delta T_i
-$$
 
 ### TemperatureFeedbackInt
 postprocessor implements
@@ -87,29 +74,6 @@ postprocessor implements
 $$
 \rho =  \frac{\langle \psi|\delta T \rangle}{\Delta T} 
 $$
-
-### TempDoppler
-Implements 
-
-$$
-\rho =  \langle \psi^* \psi|
- (T_i - T_{ref, i}) \Gamma(T_i) 
- \rangle 
-$$
-
-with $\Gamma(T_i) = a\log(bT_i+c) + d$ . $a$, $b$, $c$ and $d$ are appropriate fit parameters.
-
-
-### TempDensity
-Implements 
-
-$$
-\rho =  \langle \psi|
- (T_i - T_{ref, i}) \Gamma(T_i) 
- \rangle 
-$$
-
-with $\Gamma(T_i) = a T_i+ b$ . $a$ and $b$ are appropriate fit parameters.
 
 ### TwoValuesL2Norm 
 
