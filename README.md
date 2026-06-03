@@ -58,7 +58,6 @@ with $\Gamma$ being the reactivity change in reactivity caused by a global incre
 
 The ScalarMultiplication AuxKernel implements the multiplication of a scalar variable  with a variable. 
 $$ P(t) |P(x)\rangle  $$
-The ScalarMultiplicationPP AuxKernel does the same for a postprocessor
 
 ## Postprocessor
 ### WeightDNPPostprocessor
