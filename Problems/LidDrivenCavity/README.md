@@ -1,16 +1,17 @@
-Instructions
-=====
-
 # Description
 
-# Nuclear data
+This repository contains all the files used for running the Step 1.1 and Step 2.1 of the CNRS Benchmark described in Section III.B of [1]. The general description of the benchmark is given in [2].
+
+This repository is divided into three folders. The *Nuclear_data* directory contains the neutronic input data of the problem and files to process this data for the computation of the problem. The *1.1* (resp. *2.1*) directory contains the files for running the Step 1.1 (resp. Step 2.1). Both also have a *data* folder which contains the outputs of the simulations.
+
+## Nuclear data
 
 The neutronic parameters (neutron flux, mean neutron generation time, delayed fractions and decay constants for the DNP groups) are provided in the files *kinetic_data.txt* and *Powershape.csv*. They are identical to those used in [3].
 
-# Step 1.1 
+## Step 1.1 
 
 
-# Step 2.1 
+## Step 2.1 
 
 # References
 
